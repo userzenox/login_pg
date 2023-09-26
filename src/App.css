@@ -1,0 +1,172 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%);
+ 
+}
+
+
+.container {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  width: 70%;
+  padding: 20px;
+  border-radius: 5px;
+  
+}
+
+.containter2 {
+  display: flex ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+ 
+}
+.container3 {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+pre {
+  width: 80%;
+  color: #dbcece;
+  font-size: larger;
+}
+
+button {
+  background: #8a8c8e !important;
+  
+  border: solid 2px black;
+  padding: .375em 1.125em;
+  font-size: 1rem;
+}
+p {
+  color: red;
+}
+a{
+  color: black;
+  text-decoration: none;
+ 
+}
+h1{
+  padding: 0px;
+  margin: 0%;
+}
+input{
+  background-color: #918a8a ;
+  font-size: 20px;
+  
+}
+span{
+ font-size: 40px;
+ margin-left: 20px;
+}
+input.text{
+
+  font-size: 2000px;
+}
+label{
+  font-size: 26px;
+  color: black;
+}
+
+.ui_message_success{
+ 
+  font-size: 30px;
+  color: #e6d5d5;
+  padding: 10px;
+}
+.container4{
+  display: flex ;
+  justify-content: right;
+  font-size: 15px;
+  padding: 15px;
+}
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+@media (min-width: 1012px){
+  .container{
+      font-size: 25px;
+      display: flex ;
+  flex-direction: column;
+  margin-left: 40px;
+   }
+   input{
+    font-size: 28px;
+   }
+   label{
+    font-size: 32px;
+   }
+   .ui_message_success{
+ 
+    font-size: 40px;
+    color: #e6d5d5;
+    padding: 10px;
+  }
+  img{
+    width: auto;
+    height: 550px;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+    align-items: center;
+    
+  }
+
+  
+}
+
+@media (max-width: 1012px) and (min-width:600px){
+  img{
+    width: 300px;
+    height: 300px;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+    
+  }
+  .ui_message_success{
+ 
+    font-size: 25px;
+    color: #e6d5d5;
+    padding: 10px;
+  }
+  
+}
+
+@media (max-width: 600px){
+  img{
+    width: 0px;
+    height: 0px;
+  }
+}
+
