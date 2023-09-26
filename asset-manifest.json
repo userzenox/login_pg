@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/login_pg/static/css/main.eb23059e.css",
+    "main.js": "/login_pg/static/js/main.a6088007.js",
+    "index.html": "/login_pg/index.html",
+    "main.eb23059e.css.map": "/login_pg/static/css/main.eb23059e.css.map",
+    "main.a6088007.js.map": "/login_pg/static/js/main.a6088007.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb23059e.css",
+    "static/js/main.a6088007.js"
+  ]
+}
