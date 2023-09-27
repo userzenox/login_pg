@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+
 function App() {
   const initialValues = { username: "", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
@@ -11,11 +12,6 @@ function App() {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
-   const [isShown, setIsSHown] = useState(false);
-
-   const togglePassword = () => {
-     setIsSHown((isShown) => !isShown);
-   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,7 +41,7 @@ function App() {
       errors.password = "Password is required";
     } else if (values.password.length < 4) {
       errors.password = "Password must be more than 4 characters";
-    }
+    } 
     else if (!values.password.match(numbers)) {
       errors.password ="Password should contains numbers!";
     }
@@ -55,65 +51,76 @@ function App() {
     else if (!values.password.match(upperCase)) {
       errors.password ="Password should contains a Upper case letter!";
     }
+
+    
+
+
     return errors;
   };
 
   return (
-    <div className="main">
+   
     <div className="container">
         {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui_message_success"> <b>Signed in successfully</b> </div>
       ) : (
         <pre>{JSON.stringify()}</pre>
       )}
+      <h1>Welcome Back</h1> 
+    <div className="containter2">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <form onSubmit={handleSubmit}>
-        <h1>Welcome Back</h1>
+<div class="container2">
+  <span><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></span>
+  <span><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+  <span><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></span>
+  <span><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></span>
+</div>
+    </div>
+
+<div> <b>  OR </b> </div> 
+    <div className="container3">
+      
+    <form onSubmit={handleSubmit}>
+       
         <div className="ui divider"></div>
         <div className="ui form">
          
-          <p>{formErrors.username}</p>
           <div className="field">
-            <label>Email</label><br></br> 
+            <label>Email &ensp;   </label> <br></br>
             <input
               type="text"
               name="email"
-             
+              
               value={formValues.email}
               onChange={handleChange}
             />
           </div>
           <p>{formErrors.email}</p>
-          <label>Password  </label> <br></br> 
           <div className="field">
-          <input
-          type={isShown ? "text" : "password"}
+            <label>Password  </label> <br></br> 
+            <input
+              type="password"
+              name="password"
+              
+              value={formValues.password}
+              onChange={handleChange}
+            /> 
+            <div className="container4"> Forgot Password?</div>
           
-          className="input"
-          name="password"
-          onChange={handleChange}
-          value={formValues.password}
-        />
-
-        <div className="checkbox-container">
-          <label htmlFor="checkbox">Show password?</label>
-          <input
-            id="checkbox"
-            type="checkbox"
-            checked={isShown}
-            onChange={togglePassword}
-          />
-        </div>
-        
-          </div>
+          </div >
           <p>{formErrors.password}</p>
-          <button className="fluid ui button blue">Submit</button>
+          <div  class="buttons-container" >
+          <button className="fluid ui button blue"> Sign In</button>
+          </div>
         </div>
       </form>
     </div>
-
-      
-        </div>
+    </div>
+    
+   
+    
   );
 }
 
