@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className="main">
+    <div className="main1">
     <div className="container">
         {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui_message_success"> <b>Signed in successfully</b> </div>
