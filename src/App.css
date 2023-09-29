@@ -31,7 +31,7 @@ button {
   font-size: 18px;
 }
 p {
-  color:#232946;
+  color:#fb0f0f;
 }
 h1{
   color:#fffffe;
@@ -43,12 +43,12 @@ h1{
 input{
   background-color: #232946 ;
   font-size: 20px;
-  color: #b8c1ec;
+  color: #fbfcfe;
   
 }
 label{
   color:#b8c1ec;
-  font-size: 30px;
+  font-size: 20px;
 }
 .ui_message_success{
   color:#b8c1ec;
