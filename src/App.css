@@ -31,7 +31,7 @@ button {
   font-size: 18px;
 }
 p {
-  color:#fb0f0f;
+  color:#f5f3f3;
 }
 h1{
   color:#fffffe;
@@ -41,14 +41,16 @@ h1{
   color:#232946;
 }
 input{
-  background-color: #232946 ;
-  font-size: 20px;
-  color: #fbfcfe;
+  background-color: #ffffff ;
+  font-size: 16px;
+  color: var(--secondary);
+  padding: 5px;
   
 }
 label{
   color:#b8c1ec;
   font-size: 20px;
+  font-family: monospace;
 }
 .ui_message_success{
   color:#b8c1ec;
