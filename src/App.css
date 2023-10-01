@@ -29,7 +29,7 @@ pre {
 
 button {
   background:#eebbc3 ;
-  font-size: 18px;
+  font-size: 25px;
 }
 p {
   color:#f5f3f3;
@@ -58,3 +58,39 @@ label{
   font-size: 20px;
   
 }
+@media (min-width: 1012px){
+  .container{
+      font-size: 25px;
+      display: flex ;
+  flex-direction: column;
+  margin-left: 40px;
+   }
+   input{
+    font-size: 20px;
+    padding: 6px;
+   }
+   label{
+    font-size: 30px;
+   }
+   .ui_message_success{
+ 
+    font-size: 40px;
+    color: #e6d5d5;
+    padding: 10px;
+  }
+ 
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+    align-items: center;
+    
+  }
+  button {
+    background:#eebbc3 ;
+    font-size: 35px;
+  }
+  
+}
+
